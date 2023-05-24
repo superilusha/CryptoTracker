@@ -56,15 +56,31 @@
 		D0505A842A1D88FB00286145 /* CryptoTracker */ = {
 			isa = PBXGroup;
 			children = (
-				D0505A852A1D88FB00286145 /* AppDelegate.swift */,
-				D0505A872A1D88FB00286145 /* SceneDelegate.swift */,
+				D0505A9A2A1EC77D00286145 /* Application */,
+				D0505A992A1EC76200286145 /* Resources */,
 				D0505A892A1D88FB00286145 /* ViewController.swift */,
 				D0505A8B2A1D88FB00286145 /* Main.storyboard */,
+			);
+			path = CryptoTracker;
+			sourceTree = "<group>";
+		};
+		D0505A992A1EC76200286145 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				D0505A8E2A1D88FD00286145 /* Assets.xcassets */,
 				D0505A902A1D88FD00286145 /* LaunchScreen.storyboard */,
 				D0505A932A1D88FD00286145 /* Info.plist */,
 			);
-			path = CryptoTracker;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D0505A9A2A1EC77D00286145 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D0505A852A1D88FB00286145 /* AppDelegate.swift */,
+				D0505A872A1D88FB00286145 /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +304,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CryptoTracker/Info.plist;
+				INFOPLIST_FILE = CryptoTracker/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CryptoTracker/Info.plist;
+				INFOPLIST_FILE = CryptoTracker/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
