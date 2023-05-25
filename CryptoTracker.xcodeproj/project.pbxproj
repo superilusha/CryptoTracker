@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D0505A862A1D88FB00286145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505A852A1D88FB00286145 /* AppDelegate.swift */; };
 		D0505A882A1D88FB00286145 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505A872A1D88FB00286145 /* SceneDelegate.swift */; };
-		D0505A8A2A1D88FB00286145 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505A892A1D88FB00286145 /* ViewController.swift */; };
 		D0505A8D2A1D88FB00286145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0505A8B2A1D88FB00286145 /* Main.storyboard */; };
 		D0505A8F2A1D88FD00286145 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0505A8E2A1D88FD00286145 /* Assets.xcassets */; };
 		D0505A922A1D88FD00286145 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0505A902A1D88FD00286145 /* LaunchScreen.storyboard */; };
@@ -38,7 +37,6 @@
 		D0505A822A1D88FB00286145 /* CryptoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0505A852A1D88FB00286145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0505A872A1D88FB00286145 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D0505A892A1D88FB00286145 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D0505A8C2A1D88FB00286145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0505A8E2A1D88FD00286145 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0505A912A1D88FD00286145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 				D0505AC22A1ECA3D00286145 /* Services */,
 				D0505A9A2A1EC77D00286145 /* Application */,
 				D0505A992A1EC76200286145 /* Resources */,
-				D0505A892A1D88FB00286145 /* ViewController.swift */,
 				D0505A8B2A1D88FB00286145 /* Main.storyboard */,
 			);
 			path = CryptoTracker;
@@ -305,7 +302,6 @@
 				D0505AA52A1EC8F000286145 /* LoginViewController.swift in Sources */,
 				D0505AAB2A1EC93800286145 /* CoinsListViewProtocol.swift in Sources */,
 				D0505ACB2A1ECAAA00286145 /* AuthService.swift in Sources */,
-				D0505A8A2A1D88FB00286145 /* ViewController.swift in Sources */,
 				D0505AAF2A1EC95900286145 /* CoinDetailsViewController.swift in Sources */,
 				D0505AAD2A1EC94500286145 /* CoinTableViewCell.swift in Sources */,
 				D0505AC52A1ECA7D00286145 /* SceneRouter.swift in Sources */,

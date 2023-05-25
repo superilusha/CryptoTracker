@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+// Протокол LoginView представляет собой контракт между ViewController и Presenter.
+protocol LoginView: AnyObject {
+    func showErrorMessage(message: String)
+}

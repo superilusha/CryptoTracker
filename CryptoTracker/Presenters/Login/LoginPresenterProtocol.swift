@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+// Протокол LoginPresenter представляет собой контракт между Presenter и ViewController.
+protocol LoginPresenter {
+    func login(username: String, password: String)
+}
