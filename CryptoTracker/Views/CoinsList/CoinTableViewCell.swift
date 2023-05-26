@@ -26,22 +26,22 @@ class CoinTableViewCell: UITableViewCell {
         }
         
         // Устанавливаем размеры шрифтов и полужирность
-                nameLabel.font = UIFont.systemFont(ofSize: 14.0)
-                symbolLabel.font = UIFont.boldSystemFont(ofSize: 18.0)
+        nameLabel.font = UIFont.systemFont(ofSize: 14.0)
+        symbolLabel.font = UIFont.boldSystemFont(ofSize: 18.0)
         
         // Задаем расположение UI-элементов
         NSLayoutConstraint.activate([
-            nameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-            nameLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 4),
-            
-            symbolLabel.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor),
-            symbolLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 1),  //4
-            
+            symbolLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            symbolLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 4),
+
+            nameLabel.leadingAnchor.constraint(equalTo: symbolLabel.leadingAnchor),
+            nameLabel.topAnchor.constraint(equalTo: symbolLabel.bottomAnchor, constant: 1),
+
             priceLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             priceLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 4),
-            
-            changeLabel.trailingAnchor.constraint(equalTo: priceLabel.trailingAnchor),
-            changeLabel.topAnchor.constraint(equalTo: priceLabel.bottomAnchor, constant: 1)
+
+            changeLabel.trailingAnchor.constraint(equalTo: priceLabel.leadingAnchor, constant: -8),
+            changeLabel.centerYAnchor.constraint(equalTo: priceLabel.centerYAnchor)
         ])
     }
     
@@ -57,4 +57,3 @@ class CoinTableViewCell: UITableViewCell {
         changeLabel.textColor = coin.percentChangeUsdLast24Hours >= 0 ? .systemGreen : .systemRed
     }
 }
-
