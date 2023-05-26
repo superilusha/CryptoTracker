@@ -9,7 +9,7 @@ import Foundation
 
 
 struct CoinListResponse: Codable {
-    let data: [CoinResponse]
+    let data: CoinResponse
     
     struct CoinResponse: Codable {
         let id: String
