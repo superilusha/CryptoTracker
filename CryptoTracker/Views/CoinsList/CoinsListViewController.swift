@@ -12,15 +12,20 @@ class CoinsListViewController: UIViewController {
     
     private let tableView: UITableView = {
         let table = UITableView()
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "сoinCell")
+        table.register(UITableViewCell.self, forCellReuseIdentifier: "coinCell")
         return table
     }()
     
     private var coins: [Coin] = []
     
+    private var presenter: CoinsListPresenter!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        presenter = CoinsListPresenter(viewController: self)
+
+        setupLogoutButton()
         
         navigationItem.title = "Coins"
         view.addSubview(tableView)
@@ -31,6 +36,15 @@ class CoinsListViewController: UIViewController {
 
         
         fetchCoins()
+    }
+    
+    private func setupLogoutButton() {
+        let logoutBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutButtonPressed))
+        navigationItem.rightBarButtonItem = logoutBarButtonItem
+    }
+    
+    @objc private func logoutButtonPressed() {
+        presenter.logout()
     }
     
     private func fetchCoins() {
@@ -60,7 +74,6 @@ extension CoinsListViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "coinCell", for: indexPath) as! CoinTableViewCell
         cell.configure(with: coin)
             
-            return cell
-
+        return cell
     }
 }
