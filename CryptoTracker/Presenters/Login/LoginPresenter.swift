@@ -32,13 +32,6 @@ class LoginPresenterImpl: LoginPresenter {
         }
 
     
-//    private func navigateToCoinsList() {
-//            let coinsListViewController = SceneRouter.route(scene: .coinsList)
-//            DispatchQueue.main.async {
-//                if let navigationController = self.view.navigationController {
-//                    navigationController.setViewControllers([coinsListViewController], animated: true)
-//                }
-//            }
-//        }
+
 
 }

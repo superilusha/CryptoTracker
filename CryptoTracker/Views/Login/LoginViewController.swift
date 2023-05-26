@@ -109,7 +109,7 @@ class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
     }
 
     @objc private func forgotPasswordButtonPressed() {
-        // Здесь можно заменить сообщение на данные пользователя
+       
         let message = "Логин: 1234\nПароль: 1234"
 
         let alertController = UIAlertController(title: "Ваши данные", message: message, preferredStyle: .alert)

@@ -13,15 +13,11 @@ struct Coin: Codable {
     let name: String
     let priceUsd: Double
     let percentChangeUsdLast24Hours:Double
+    let percentChangeUsdLast1Hour: Double
+    let volume: Double
+    let marketcap: Double
+    let marketcapRank: Int
    
     
-//    enum CodingKeys: String, CodingKey {
-//        case id
-//        case symbol
-//        case name
-//        case priceUsd
-//        case last24HoursChange
-//
-//    }
 }
 

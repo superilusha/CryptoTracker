@@ -37,7 +37,11 @@ struct NetworkManager {
                                             symbol: coinResponse.data.symbol,
                                             name: coinResponse.data.name,
                                             priceUsd: coinResponse.data.market_data.price_usd ?? 0,
-                                            percentChangeUsdLast24Hours: coinResponse.data.market_data.percent_change_usd_last_24_hours ?? 0)
+                                            percentChangeUsdLast24Hours: coinResponse.data.market_data.percent_change_usd_last_24_hours ?? 0,
+                                            percentChangeUsdLast1Hour: coinResponse.data.market_data.percent_change_usd_last_1_hour ?? 0,
+                                            volume: coinResponse.data.market_data.real_volume_last_24_hours ?? 0,
+                                            marketcap: coinResponse.data.marketcap.current_marketcap_usd ?? 0,
+                                            marketcapRank: coinResponse.data.marketcap.rank ?? 0)
 
                             
                             coins.append(coin)
