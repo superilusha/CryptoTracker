@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0460D682A20D3F2008FCF1A /* CoinListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0460D672A20D3F2008FCF1A /* CoinListResponse.swift */; };
 		D0505A862A1D88FB00286145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505A852A1D88FB00286145 /* AppDelegate.swift */; };
 		D0505A882A1D88FB00286145 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505A872A1D88FB00286145 /* SceneDelegate.swift */; };
 		D0505A8D2A1D88FB00286145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0505A8B2A1D88FB00286145 /* Main.storyboard */; };
@@ -29,11 +30,12 @@
 		D0505AC12A1ECA1700286145 /* CoinDetailsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AC02A1ECA1700286145 /* CoinDetailsPresenterProtocol.swift */; };
 		D0505AC52A1ECA7D00286145 /* SceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AC42A1ECA7D00286145 /* SceneRouter.swift */; };
 		D0505AC72A1ECA8C00286145 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AC62A1ECA8C00286145 /* RouterProtocol.swift */; };
-		D0505AC92A1ECA9F00286145 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AC82A1ECA9F00286145 /* NetworkService.swift */; };
+		D0505AC92A1ECA9F00286145 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AC82A1ECA9F00286145 /* NetworkManager.swift */; };
 		D0505ACB2A1ECAAA00286145 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505ACA2A1ECAAA00286145 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D0460D672A20D3F2008FCF1A /* CoinListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListResponse.swift; sourceTree = "<group>"; };
 		D0505A822A1D88FB00286145 /* CryptoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0505A852A1D88FB00286145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0505A872A1D88FB00286145 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +60,7 @@
 		D0505AC02A1ECA1700286145 /* CoinDetailsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailsPresenterProtocol.swift; sourceTree = "<group>"; };
 		D0505AC42A1ECA7D00286145 /* SceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneRouter.swift; sourceTree = "<group>"; };
 		D0505AC62A1ECA8C00286145 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
-		D0505AC82A1ECA9F00286145 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D0505AC82A1ECA9F00286145 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D0505ACA2A1ECAAA00286145 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +130,7 @@
 			children = (
 				D0505A9C2A1EC86300286145 /* Coin.swift */,
 				D0505A9E2A1EC87000286145 /* CoinDetails.swift */,
+				D0460D672A20D3F2008FCF1A /* CoinListResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -210,7 +213,7 @@
 		D0505AC22A1ECA3D00286145 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				D0505AC82A1ECA9F00286145 /* NetworkService.swift */,
+				D0505AC82A1ECA9F00286145 /* NetworkManager.swift */,
 				D0505ACA2A1ECAAA00286145 /* AuthService.swift */,
 			);
 			path = Services;
@@ -305,11 +308,12 @@
 				D0505AAF2A1EC95900286145 /* CoinDetailsViewController.swift in Sources */,
 				D0505AAD2A1EC94500286145 /* CoinTableViewCell.swift in Sources */,
 				D0505AC52A1ECA7D00286145 /* SceneRouter.swift in Sources */,
+				D0460D682A20D3F2008FCF1A /* CoinListResponse.swift in Sources */,
 				D0505AB92A1EC9DF00286145 /* LoginPresenterProtocol.swift in Sources */,
 				D0505A862A1D88FB00286145 /* AppDelegate.swift in Sources */,
 				D0505A9D2A1EC86300286145 /* Coin.swift in Sources */,
 				D0505AB72A1EC9D400286145 /* LoginPresenter.swift in Sources */,
-				D0505AC92A1ECA9F00286145 /* NetworkService.swift in Sources */,
+				D0505AC92A1ECA9F00286145 /* NetworkManager.swift in Sources */,
 				D0505ABD2A1EC9F800286145 /* CoinsListPresenterProtocol.swift in Sources */,
 				D0505AB12A1EC96500286145 /* CoinDetailsViewProtocol.swift in Sources */,
 				D0505ABB2A1EC9EE00286145 /* CoinsListPresenter.swift in Sources */,

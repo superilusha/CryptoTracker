@@ -8,14 +8,21 @@
 import Foundation
 
 class AuthService {
-    private let vaildUsername = "1234"
+    private let validUsername = "1234"
     private let validPassword = "1234"
     
     static let shared = AuthService()
     
     private init() {}
     
-    func isValidCredentials(username: String, password: String) -> Bool {
-        return username == vaildUsername && password == validPassword
+    func login(username: String, password: String, completion: @escaping (Result<(), Error>) -> Void) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 0.5) {
+            if username == self.validUsername && password == self.validPassword {
+                completion(.success(()))
+            } else {
+                let error = NSError(domain: "AuthError", code: 1, userInfo: [NSLocalizedDescriptionKey: "Invalid username or password"])
+                completion(.failure(error))
+            }
+        }
     }
 }
