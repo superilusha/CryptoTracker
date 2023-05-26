@@ -39,10 +39,10 @@ class CoinTableViewCell: UITableViewCell {
             symbolLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 1),  //4
             
             priceLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-            priceLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
+            priceLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 4),
             
             changeLabel.trailingAnchor.constraint(equalTo: priceLabel.trailingAnchor),
-            changeLabel.topAnchor.constraint(equalTo: priceLabel.bottomAnchor, constant: 4)
+            changeLabel.topAnchor.constraint(equalTo: priceLabel.bottomAnchor, constant: 1)
         ])
     }
     
@@ -53,13 +53,16 @@ class CoinTableViewCell: UITableViewCell {
     func configure(with coin: Coin) {
         nameLabel.text = coin.name
         symbolLabel.text = coin.symbol
+        priceLabel.text = String(format: "$%.2f", coin.priceUsd)
+        changeLabel.text = String(format: "%.2f%%", coin.percentChangeUsdLast24Hours)
+        changeLabel.textColor = coin.percentChangeUsdLast24Hours >= 0 ? .systemGreen : .systemRed
         
 //        if let priceUsd = coin.priceUsd {
 //            priceLabel.text = String(format: "$%.2f", priceUsd)
 //        } else {
 //            priceLabel.text = "N/A"
 //        }
-        
+//
 //        if let oneDayChange = coin.oneDayChange {
 //            changeLabel.text = String(format: "%.2f%%", oneDayChange)
 //            changeLabel.textColor = oneDayChange >= 0 ? .systemGreen : .systemRed

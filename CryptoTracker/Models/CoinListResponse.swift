@@ -15,6 +15,11 @@ struct CoinListResponse: Codable {
         let id: String
         let symbol: String
         let name: String
+        let market_data: MarketData
         
+        struct MarketData: Codable {
+            let price_usd: Double?
+            let percent_change_usd_last_24_hours: Double?
+        }
     }
 }

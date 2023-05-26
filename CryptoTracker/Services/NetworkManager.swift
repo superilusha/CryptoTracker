@@ -11,7 +11,7 @@ struct NetworkManager {
     let baseURL = "https://data.messari.io/api/v1/assets"
     
     func fetchCoins(completion: @escaping (Result<[Coin], Error>) -> Void) {
-        let coinIDs = ["btc", "eth", "sol", "usdt", "cardano"]
+        let coinIDs = ["btc", "eth", "sol", "xrp", "cardano", "tron", "polkadot", "dogecoin", "tether", "stellar"]
         var coins: [Coin] = []
         let group = DispatchGroup()
         
@@ -35,7 +35,10 @@ struct NetworkManager {
                             
                             let coin = Coin(id: coinResponse.data.id,
                                             symbol: coinResponse.data.symbol,
-                                            name: coinResponse.data.name)
+                                            name: coinResponse.data.name,
+                                            priceUsd: coinResponse.data.market_data.price_usd ?? 0,
+                                            percentChangeUsdLast24Hours: coinResponse.data.market_data.percent_change_usd_last_24_hours ?? 0)
+
                             
                             coins.append(coin)
                             
