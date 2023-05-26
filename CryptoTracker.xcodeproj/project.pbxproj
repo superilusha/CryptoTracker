@@ -23,7 +23,6 @@
 		D0505AB72A1EC9D400286145 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AB62A1EC9D400286145 /* LoginPresenter.swift */; };
 		D0505AB92A1EC9DF00286145 /* LoginPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AB82A1EC9DF00286145 /* LoginPresenterProtocol.swift */; };
 		D0505ABB2A1EC9EE00286145 /* CoinsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505ABA2A1EC9EE00286145 /* CoinsListPresenter.swift */; };
-		D0505ABF2A1ECA0C00286145 /* CoinDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505ABE2A1ECA0C00286145 /* CoinDetailsPresenter.swift */; };
 		D0505AC52A1ECA7D00286145 /* SceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AC42A1ECA7D00286145 /* SceneRouter.swift */; };
 		D0505AC92A1ECA9F00286145 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AC82A1ECA9F00286145 /* NetworkManager.swift */; };
 		D0505ACB2A1ECAAA00286145 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505ACA2A1ECAAA00286145 /* AuthService.swift */; };
@@ -32,6 +31,7 @@
 /* Begin PBXFileReference section */
 		D0460D672A20D3F2008FCF1A /* CoinListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListResponse.swift; sourceTree = "<group>"; };
 		D0460D6A2A212CD5008FCF1A /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		D0460D6C2A216E8A008FCF1A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D0505A822A1D88FB00286145 /* CryptoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0505A852A1D88FB00286145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0505A872A1D88FB00286145 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +48,6 @@
 		D0505AB62A1EC9D400286145 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		D0505AB82A1EC9DF00286145 /* LoginPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterProtocol.swift; sourceTree = "<group>"; };
 		D0505ABA2A1EC9EE00286145 /* CoinsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListPresenter.swift; sourceTree = "<group>"; };
-		D0505ABE2A1ECA0C00286145 /* CoinDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailsPresenter.swift; sourceTree = "<group>"; };
 		D0505AC42A1ECA7D00286145 /* SceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneRouter.swift; sourceTree = "<group>"; };
 		D0505AC82A1ECA9F00286145 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D0505ACA2A1ECAAA00286145 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		D0505A792A1D88FB00286145 = {
 			isa = PBXGroup;
 			children = (
+				D0460D6C2A216E8A008FCF1A /* README.md */,
 				D0505A842A1D88FB00286145 /* CryptoTracker */,
 				D0505A832A1D88FB00286145 /* Products */,
 			);
@@ -163,7 +163,6 @@
 		D0505AB22A1EC99B00286145 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
-				D0505AB52A1EC9BB00286145 /* CoinDetails */,
 				D0505AB42A1EC9B200286145 /* CoinsList */,
 				D0505AB32A1EC9AC00286145 /* Login */,
 			);
@@ -185,14 +184,6 @@
 				D0505ABA2A1EC9EE00286145 /* CoinsListPresenter.swift */,
 			);
 			path = CoinsList;
-			sourceTree = "<group>";
-		};
-		D0505AB52A1EC9BB00286145 /* CoinDetails */ = {
-			isa = PBXGroup;
-			children = (
-				D0505ABE2A1ECA0C00286145 /* CoinDetailsPresenter.swift */,
-			);
-			path = CoinDetails;
 			sourceTree = "<group>";
 		};
 		D0505AC22A1ECA3D00286145 /* Services */ = {
@@ -298,7 +289,6 @@
 				D0460D6B2A212CD5008FCF1A /* UserDefaults.swift in Sources */,
 				D0505AC92A1ECA9F00286145 /* NetworkManager.swift in Sources */,
 				D0505ABB2A1EC9EE00286145 /* CoinsListPresenter.swift in Sources */,
-				D0505ABF2A1ECA0C00286145 /* CoinDetailsPresenter.swift in Sources */,
 				D0505A882A1D88FB00286145 /* SceneDelegate.swift in Sources */,
 				D0505AA92A1EC92D00286145 /* CoinsListViewController.swift in Sources */,
 			);

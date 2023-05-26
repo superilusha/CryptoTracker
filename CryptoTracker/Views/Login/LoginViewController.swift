@@ -20,7 +20,7 @@ class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
 
     private let usernameTextField: UITextField = {
         let textField = UITextField()
-        textField.placeholder = "Логин"
+        textField.placeholder = "Login"
         textField.borderStyle = .roundedRect
         textField.autocorrectionType = .no
         textField.returnKeyType = .next
@@ -29,7 +29,7 @@ class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
 
     private let passwordTextField: UITextField = {
         let textField = UITextField()
-        textField.placeholder = "Пароль"
+        textField.placeholder = "Password"
         textField.borderStyle = .roundedRect
         textField.isSecureTextEntry = true
         textField.returnKeyType = .done
@@ -38,7 +38,7 @@ class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
 
     private let loginButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Войти", for: .normal)
+        button.setTitle("Log in", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 5
@@ -47,7 +47,7 @@ class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
 
     private let forgotPasswordButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Забыли пароль?", for: .normal)
+        button.setTitle("Forgot credentials?", for: .normal)
         button.setTitleColor(.systemBlue, for: .normal)
         return button
     }()
@@ -93,7 +93,7 @@ class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
     }
 
     func showErrorMessage(message: String) {
-        let alertController = UIAlertController(title: "Ошибка", message: message, preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alertController, animated: true, completion: nil)
     }
@@ -110,9 +110,9 @@ class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
 
     @objc private func forgotPasswordButtonPressed() {
        
-        let message = "Логин: 1234\nПароль: 1234"
+        let message = "Login: 1234\nPassword: 1234"
 
-        let alertController = UIAlertController(title: "Ваши данные", message: message, preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Your Credentials", message: message, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alertController, animated: true, completion: nil)
     }
