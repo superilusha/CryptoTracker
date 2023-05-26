@@ -15,22 +15,16 @@
 		D0505A8F2A1D88FD00286145 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0505A8E2A1D88FD00286145 /* Assets.xcassets */; };
 		D0505A922A1D88FD00286145 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0505A902A1D88FD00286145 /* LaunchScreen.storyboard */; };
 		D0505A9D2A1EC86300286145 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505A9C2A1EC86300286145 /* Coin.swift */; };
-		D0505A9F2A1EC87000286145 /* CoinDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505A9E2A1EC87000286145 /* CoinDetails.swift */; };
 		D0505AA52A1EC8F000286145 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AA42A1EC8F000286145 /* LoginViewController.swift */; };
 		D0505AA72A1EC91700286145 /* LoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AA62A1EC91700286145 /* LoginViewProtocol.swift */; };
 		D0505AA92A1EC92D00286145 /* CoinsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AA82A1EC92D00286145 /* CoinsListViewController.swift */; };
-		D0505AAB2A1EC93800286145 /* CoinsListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AAA2A1EC93800286145 /* CoinsListViewProtocol.swift */; };
 		D0505AAD2A1EC94500286145 /* CoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AAC2A1EC94500286145 /* CoinTableViewCell.swift */; };
 		D0505AAF2A1EC95900286145 /* CoinDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AAE2A1EC95900286145 /* CoinDetailsViewController.swift */; };
-		D0505AB12A1EC96500286145 /* CoinDetailsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AB02A1EC96500286145 /* CoinDetailsViewProtocol.swift */; };
 		D0505AB72A1EC9D400286145 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AB62A1EC9D400286145 /* LoginPresenter.swift */; };
 		D0505AB92A1EC9DF00286145 /* LoginPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AB82A1EC9DF00286145 /* LoginPresenterProtocol.swift */; };
 		D0505ABB2A1EC9EE00286145 /* CoinsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505ABA2A1EC9EE00286145 /* CoinsListPresenter.swift */; };
-		D0505ABD2A1EC9F800286145 /* CoinsListPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505ABC2A1EC9F800286145 /* CoinsListPresenterProtocol.swift */; };
 		D0505ABF2A1ECA0C00286145 /* CoinDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505ABE2A1ECA0C00286145 /* CoinDetailsPresenter.swift */; };
-		D0505AC12A1ECA1700286145 /* CoinDetailsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AC02A1ECA1700286145 /* CoinDetailsPresenterProtocol.swift */; };
 		D0505AC52A1ECA7D00286145 /* SceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AC42A1ECA7D00286145 /* SceneRouter.swift */; };
-		D0505AC72A1ECA8C00286145 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AC62A1ECA8C00286145 /* RouterProtocol.swift */; };
 		D0505AC92A1ECA9F00286145 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505AC82A1ECA9F00286145 /* NetworkManager.swift */; };
 		D0505ACB2A1ECAAA00286145 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505ACA2A1ECAAA00286145 /* AuthService.swift */; };
 /* End PBXBuildFile section */
@@ -46,22 +40,16 @@
 		D0505A912A1D88FD00286145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0505A932A1D88FD00286145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0505A9C2A1EC86300286145 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
-		D0505A9E2A1EC87000286145 /* CoinDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetails.swift; sourceTree = "<group>"; };
 		D0505AA42A1EC8F000286145 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D0505AA62A1EC91700286145 /* LoginViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocol.swift; sourceTree = "<group>"; };
 		D0505AA82A1EC92D00286145 /* CoinsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListViewController.swift; sourceTree = "<group>"; };
-		D0505AAA2A1EC93800286145 /* CoinsListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListViewProtocol.swift; sourceTree = "<group>"; };
 		D0505AAC2A1EC94500286145 /* CoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableViewCell.swift; sourceTree = "<group>"; };
 		D0505AAE2A1EC95900286145 /* CoinDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailsViewController.swift; sourceTree = "<group>"; };
-		D0505AB02A1EC96500286145 /* CoinDetailsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailsViewProtocol.swift; sourceTree = "<group>"; };
 		D0505AB62A1EC9D400286145 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		D0505AB82A1EC9DF00286145 /* LoginPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterProtocol.swift; sourceTree = "<group>"; };
 		D0505ABA2A1EC9EE00286145 /* CoinsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListPresenter.swift; sourceTree = "<group>"; };
-		D0505ABC2A1EC9F800286145 /* CoinsListPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListPresenterProtocol.swift; sourceTree = "<group>"; };
 		D0505ABE2A1ECA0C00286145 /* CoinDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailsPresenter.swift; sourceTree = "<group>"; };
-		D0505AC02A1ECA1700286145 /* CoinDetailsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailsPresenterProtocol.swift; sourceTree = "<group>"; };
 		D0505AC42A1ECA7D00286145 /* SceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneRouter.swift; sourceTree = "<group>"; };
-		D0505AC62A1ECA8C00286145 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
 		D0505AC82A1ECA9F00286145 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D0505ACA2A1ECAAA00286145 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,7 +120,6 @@
 			children = (
 				D0505A9C2A1EC86300286145 /* Coin.swift */,
 				D0460D672A20D3F2008FCF1A /* CoinListResponse.swift */,
-				D0505A9E2A1EC87000286145 /* CoinDetails.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -160,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				D0505AA82A1EC92D00286145 /* CoinsListViewController.swift */,
-				D0505AAA2A1EC93800286145 /* CoinsListViewProtocol.swift */,
 				D0505AAC2A1EC94500286145 /* CoinTableViewCell.swift */,
 			);
 			path = CoinsList;
@@ -170,7 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				D0505AAE2A1EC95900286145 /* CoinDetailsViewController.swift */,
-				D0505AB02A1EC96500286145 /* CoinDetailsViewProtocol.swift */,
 			);
 			path = CoinDetails;
 			sourceTree = "<group>";
@@ -198,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				D0505ABA2A1EC9EE00286145 /* CoinsListPresenter.swift */,
-				D0505ABC2A1EC9F800286145 /* CoinsListPresenterProtocol.swift */,
 			);
 			path = CoinsList;
 			sourceTree = "<group>";
@@ -207,7 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				D0505ABE2A1ECA0C00286145 /* CoinDetailsPresenter.swift */,
-				D0505AC02A1ECA1700286145 /* CoinDetailsPresenterProtocol.swift */,
 			);
 			path = CoinDetails;
 			sourceTree = "<group>";
@@ -226,7 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				D0505AC42A1ECA7D00286145 /* SceneRouter.swift */,
-				D0505AC62A1ECA8C00286145 /* RouterProtocol.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -302,11 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0505AC12A1ECA1700286145 /* CoinDetailsPresenterProtocol.swift in Sources */,
 				D0505AA72A1EC91700286145 /* LoginViewProtocol.swift in Sources */,
-				D0505AC72A1ECA8C00286145 /* RouterProtocol.swift in Sources */,
 				D0505AA52A1EC8F000286145 /* LoginViewController.swift in Sources */,
-				D0505AAB2A1EC93800286145 /* CoinsListViewProtocol.swift in Sources */,
 				D0505ACB2A1ECAAA00286145 /* AuthService.swift in Sources */,
 				D0505AAF2A1EC95900286145 /* CoinDetailsViewController.swift in Sources */,
 				D0505AAD2A1EC94500286145 /* CoinTableViewCell.swift in Sources */,
@@ -318,12 +297,9 @@
 				D0505AB72A1EC9D400286145 /* LoginPresenter.swift in Sources */,
 				D0460D6B2A212CD5008FCF1A /* UserDefaults.swift in Sources */,
 				D0505AC92A1ECA9F00286145 /* NetworkManager.swift in Sources */,
-				D0505ABD2A1EC9F800286145 /* CoinsListPresenterProtocol.swift in Sources */,
-				D0505AB12A1EC96500286145 /* CoinDetailsViewProtocol.swift in Sources */,
 				D0505ABB2A1EC9EE00286145 /* CoinsListPresenter.swift in Sources */,
 				D0505ABF2A1ECA0C00286145 /* CoinDetailsPresenter.swift in Sources */,
 				D0505A882A1D88FB00286145 /* SceneDelegate.swift in Sources */,
-				D0505A9F2A1EC87000286145 /* CoinDetails.swift in Sources */,
 				D0505AA92A1EC92D00286145 /* CoinsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

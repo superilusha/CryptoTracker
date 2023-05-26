@@ -10,8 +10,6 @@ import UIKit
 
 class CoinsListViewController: UIViewController {
     
-    
-    
     private enum SortMode {
         case noSort
         case ascending
@@ -90,7 +88,7 @@ class CoinsListViewController: UIViewController {
     }
     
      func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-            return 40
+            return 20
         }
 
          func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -102,7 +100,6 @@ class CoinsListViewController: UIViewController {
 
             return label
         }
-
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -133,7 +130,6 @@ class CoinsListViewController: UIViewController {
         ])
     }
 
-    
     @objc private func refreshTableView() {
           fetchCoins() {
               self.refreshControl.endRefreshing()
@@ -212,8 +208,6 @@ class CoinsListViewController: UIViewController {
           }
           tableView.reloadData()
       }
-    
-    
   }
 
 extension CoinsListViewController: UITableViewDelegate, UITableViewDataSource {
