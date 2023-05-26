@@ -100,9 +100,11 @@ class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
 
     @objc private func loginButtonPressed() {
         presenter.login(username: usernameTextField.text ?? "", password: passwordTextField.text ?? "") { [weak self] in
-            // Успешная авторизация, переходим к следующему экрану
-            let coinsListViewController = SceneRouter.route(scene: .coinsList)
-            self?.navigationController?.pushViewController(coinsListViewController, animated: true)
+                // Успешная авторизация, сохраняем состояние и переходим к следующему экрану
+                UserDefaultsManager.shared.setUserLoggedIn(true)
+                let coinsListViewController = SceneRouter.route(scene: .coinsList)
+            self?.navigationController?.setViewControllers([coinsListViewController], animated: true)
+
         }
     }
 
