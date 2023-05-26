@@ -16,6 +16,13 @@ class CoinsListViewController: UIViewController {
         return table
     }()
     
+    private let loadingIndicator: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView(style: .large)
+        indicator.hidesWhenStopped = true
+        return indicator
+    }()
+
+    
     private var coins: [Coin] = []
     
     private var presenter: CoinsListPresenter!
@@ -35,13 +42,18 @@ class CoinsListViewController: UIViewController {
         tableView.register(CoinTableViewCell.self, forCellReuseIdentifier: "coinCell")
         tableView.refreshControl = refreshControl
 
+        view.addSubview(loadingIndicator)
+        loadingIndicator.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            loadingIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            loadingIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
 
         
         
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        coins.removeAll()
             tableView.reloadData()
             
             fetchCoins()
@@ -73,9 +85,13 @@ class CoinsListViewController: UIViewController {
     
     private func fetchCoins(completion: (() -> Void)? = nil) {
         let networkManager = NetworkManager()
-        
+        loadingIndicator.startAnimating()
+
         networkManager.fetchCoins() { [weak self] result in
             DispatchQueue.main.async {
+                self?.loadingIndicator.stopAnimating()
+                            
+
                 switch result {
                 case .success(let coins):
                     self?.coins = coins
