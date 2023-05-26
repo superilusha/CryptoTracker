@@ -58,9 +58,7 @@ extension CoinsListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let coin = coins[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "coinCell", for: indexPath) as! CoinTableViewCell
-            
-            // Настройте ячейку с данными монеты
-            cell.configure(with: coin)
+        cell.configure(with: coin)
             
             return cell
 

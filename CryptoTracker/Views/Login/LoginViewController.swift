@@ -10,6 +10,14 @@ import UIKit
 
 class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
 
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "CryptoTracker"
+        label.font = UIFont.boldSystemFont(ofSize: 24)
+        label.textAlignment = .center
+        return label
+    }()
+
     private let usernameTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Логин"
@@ -37,8 +45,15 @@ class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
         return button
     }()
 
+    private let forgotPasswordButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Забыли пароль?", for: .normal)
+        button.setTitleColor(.systemBlue, for: .normal)
+        return button
+    }()
+
     private lazy var inputStackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [usernameTextField, passwordTextField, loginButton])
+        let stackView = UIStackView(arrangedSubviews: [titleLabel, usernameTextField, passwordTextField, loginButton])
         stackView.axis = .vertical
         stackView.spacing = 10
         return stackView
@@ -54,6 +69,7 @@ class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
         usernameTextField.delegate = self
         passwordTextField.delegate = self
         loginButton.addTarget(self, action: #selector(loginButtonPressed), for: .touchUpInside)
+        forgotPasswordButton.addTarget(self, action: #selector(forgotPasswordButtonPressed), for: .touchUpInside)
 
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tapGestureRecognizer)
@@ -61,11 +77,18 @@ class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
 
     private func setupUI() {
         view.addSubview(inputStackView)
+        view.addSubview(forgotPasswordButton)
+
         inputStackView.translatesAutoresizingMaskIntoConstraints = false
+        forgotPasswordButton.translatesAutoresizingMaskIntoConstraints = false
+
         NSLayoutConstraint.activate([
             inputStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            inputStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            inputStackView.widthAnchor.constraint(equalToConstant: 200)
+            inputStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -50),
+            inputStackView.widthAnchor.constraint(equalToConstant: 300),
+
+            forgotPasswordButton.topAnchor.constraint(equalTo: inputStackView.bottomAnchor, constant: 20),
+            forgotPasswordButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
 
@@ -83,6 +106,14 @@ class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
         }
     }
 
+    @objc private func forgotPasswordButtonPressed() {
+        // Здесь можно заменить сообщение на данные пользователя
+        let message = "Логин: 1234\nПароль: 1234"
+
+        let alertController = UIAlertController(title: "Ваши данные", message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alertController, animated: true, completion: nil)
+    }
 
     @objc private func dismissKeyboard() {
         view.endEditing(true)
@@ -97,3 +128,4 @@ class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
         return true
     }
 }
+

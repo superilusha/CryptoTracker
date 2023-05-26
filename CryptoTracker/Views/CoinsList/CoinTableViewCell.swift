@@ -10,7 +10,6 @@ import UIKit
 
 class CoinTableViewCell: UITableViewCell {
     
-    //static let reuseIdentifier = "coinCell"
 
     private let nameLabel = UILabel()
     private let symbolLabel = UILabel()
@@ -56,20 +55,6 @@ class CoinTableViewCell: UITableViewCell {
         priceLabel.text = String(format: "$%.2f", coin.priceUsd)
         changeLabel.text = String(format: "%.2f%%", coin.percentChangeUsdLast24Hours)
         changeLabel.textColor = coin.percentChangeUsdLast24Hours >= 0 ? .systemGreen : .systemRed
-        
-//        if let priceUsd = coin.priceUsd {
-//            priceLabel.text = String(format: "$%.2f", priceUsd)
-//        } else {
-//            priceLabel.text = "N/A"
-//        }
-//
-//        if let oneDayChange = coin.oneDayChange {
-//            changeLabel.text = String(format: "%.2f%%", oneDayChange)
-//            changeLabel.textColor = oneDayChange >= 0 ? .systemGreen : .systemRed
-//        } else {
-//            changeLabel.text = "N/A"
-//            changeLabel.textColor = .label
-//        }
     }
 }
 

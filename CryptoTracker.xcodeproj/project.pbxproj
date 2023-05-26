@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D0460D682A20D3F2008FCF1A /* CoinListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0460D672A20D3F2008FCF1A /* CoinListResponse.swift */; };
+		D0460D6B2A212CD5008FCF1A /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0460D6A2A212CD5008FCF1A /* UserDefaults.swift */; };
 		D0505A862A1D88FB00286145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505A852A1D88FB00286145 /* AppDelegate.swift */; };
 		D0505A882A1D88FB00286145 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0505A872A1D88FB00286145 /* SceneDelegate.swift */; };
 		D0505A8D2A1D88FB00286145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0505A8B2A1D88FB00286145 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		D0460D672A20D3F2008FCF1A /* CoinListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListResponse.swift; sourceTree = "<group>"; };
+		D0460D6A2A212CD5008FCF1A /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		D0505A822A1D88FB00286145 /* CryptoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0505A852A1D88FB00286145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0505A872A1D88FB00286145 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 			children = (
 				D0505AC82A1ECA9F00286145 /* NetworkManager.swift */,
 				D0505ACA2A1ECAAA00286145 /* AuthService.swift */,
+				D0460D6A2A212CD5008FCF1A /* UserDefaults.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				D0505A862A1D88FB00286145 /* AppDelegate.swift in Sources */,
 				D0505A9D2A1EC86300286145 /* Coin.swift in Sources */,
 				D0505AB72A1EC9D400286145 /* LoginPresenter.swift in Sources */,
+				D0460D6B2A212CD5008FCF1A /* UserDefaults.swift in Sources */,
 				D0505AC92A1ECA9F00286145 /* NetworkManager.swift in Sources */,
 				D0505ABD2A1EC9F800286145 /* CoinsListPresenterProtocol.swift in Sources */,
 				D0505AB12A1EC96500286145 /* CoinDetailsViewProtocol.swift in Sources */,
