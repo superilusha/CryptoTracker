@@ -33,10 +33,34 @@ class CoinsListViewController: UIViewController {
         tableView.dataSource = self
         tableView.frame = view.bounds
         tableView.register(CoinTableViewCell.self, forCellReuseIdentifier: "coinCell")
+        tableView.refreshControl = refreshControl
+
 
         
-        fetchCoins()
+        
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        coins.removeAll()
+            tableView.reloadData()
+            
+            fetchCoins()
+
+    }
+
+    @objc private func refreshTableView() {
+        fetchCoins() {
+            self.refreshControl.endRefreshing()
+        }
+    }
+
+    
+    private let refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshTableView), for: .valueChanged)
+        return refreshControl
+    }()
+
     
     private func setupLogoutButton() {
         let logoutBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutButtonPressed))
@@ -47,7 +71,7 @@ class CoinsListViewController: UIViewController {
         presenter.logout()
     }
     
-    private func fetchCoins() {
+    private func fetchCoins(completion: (() -> Void)? = nil) {
         let networkManager = NetworkManager()
         
         networkManager.fetchCoins() { [weak self] result in
@@ -59,9 +83,13 @@ class CoinsListViewController: UIViewController {
                 case .failure(let error):
                     print("Error fetching coins: \(error.localizedDescription)")
                 }
+                if let completion = completion {
+                    completion()
+                }
             }
         }
     }
+
 }
 
 extension CoinsListViewController: UITableViewDelegate, UITableViewDataSource {
