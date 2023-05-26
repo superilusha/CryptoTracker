@@ -222,4 +222,12 @@ extension CoinsListViewController: UITableViewDelegate, UITableViewDataSource {
             
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            let coin = coins[indexPath.row]
+            let coinDetailViewController = CoinDetailViewController(coin: coin)
+            navigationController?.pushViewController(coinDetailViewController, animated: true)
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+
 }
