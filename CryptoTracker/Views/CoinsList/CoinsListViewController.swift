@@ -120,11 +120,11 @@ class CoinsListViewController: UIViewController {
             tickerButton.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 16),
             tickerButton.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 24),
             
-            changeButton.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -16),
-            changeButton.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 8),
+            priceButton.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -16),
+            priceButton.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 8),
             
-            priceButton.trailingAnchor.constraint(equalTo: changeButton.leadingAnchor, constant: -16),
-            priceButton.centerYAnchor.constraint(equalTo: changeButton.centerYAnchor),
+            changeButton.trailingAnchor.constraint(equalTo: priceButton.leadingAnchor, constant: -16),
+            changeButton.centerYAnchor.constraint(equalTo: priceButton.centerYAnchor),
             
             tableView.topAnchor.constraint(equalTo: tickerButton.bottomAnchor, constant: 16),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
